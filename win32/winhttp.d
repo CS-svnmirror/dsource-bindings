@@ -111,7 +111,7 @@ enum : DWORD {
 	WINHTTP_AUTOPROXY_NO_CACHE_CLIENT       = 0x00080000,
 	WINHTTP_AUTOPROXY_NO_CACHE_SVC          = 0x00100000,
 
-	WINHTTP_AUTOPROXY_SORT_RESULTS          = 0x00400000,
+	WINHTTP_AUTOPROXY_SORT_RESULTS          = 0x00400000
 }
 
 // dwAutoDetectFlags
@@ -396,11 +396,11 @@ enum : DWORD {
 }
 
 enum : DWORD {
-	API_RECEIVE_RESPONSE        = (1),
-	API_QUERY_DATA_AVAILABLE    = (2),
-	API_READ_DATA               = (3),
-	API_WRITE_DATA              = (4),
-	API_SEND_REQUEST            = (5)
+	API_RECEIVE_RESPONSE        = 1,
+	API_QUERY_DATA_AVAILABLE    = 2,
+	API_READ_DATA               = 3,
+	API_WRITE_DATA              = 4,
+	API_SEND_REQUEST            = 5
 }
 
 enum : DWORD {
