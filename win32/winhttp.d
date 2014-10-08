@@ -6,7 +6,7 @@ pragma(lib, "winhttp");
 import win32.w32api;
 import win32.winbase;
 import win32.windef;
-import win32.winsock2 : SOCKADDR_STORAGE;
+import win32.winsock2;	// Selective Imports BUG (: SOCKADDR_STORAGE;)
 
 alias HINTERNET = void*;
 alias LPHINTERNET = HINTERNET*;
@@ -131,6 +131,7 @@ struct WINHTTP_CERTIFICATE_INFO {
     DWORD dwKeySize;
 }
 
+// This structure is only defined #if _WS2DEF_ defined (from <ws2def.h>) - per Windows SDK
 struct WINHTTP_CONNECTION_INFO {
     DWORD cbSize;
     SOCKADDR_STORAGE LocalAddress;  
