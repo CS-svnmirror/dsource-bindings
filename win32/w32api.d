@@ -21,7 +21,7 @@ enum __W32API_MINOR_VERSION = 17;
  *	Windows 9x is no longer supported, either by Microsoft or by DMD, this distinction has been
  *	removed in order to simplify the bindings.
  */
- version (Window10) {
+ version (Windows10) {
 	enum uint _WIN32_WINNT = 0x604;
 } else version (Windows8_1) {	// also Windows2012R2
 	enum uint _WIN32_WINNT = 0x603;
