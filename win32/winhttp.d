@@ -1,3 +1,12 @@
+/***********************************************************************\
+*                                winhttp.d                              *
+*                                                                       *
+*                       Windows API header module                       *
+*                                                                       *
+*                  Translated from Windows SDK Headers                  *
+*                                                                       *
+*                       Placed into public domain                       *
+\***********************************************************************/
 module win32.winhttp;
 pragma(lib, "winhttp");
 // FIXME: Grouping of constants. Windows SDK doesn't make this entirely clear
